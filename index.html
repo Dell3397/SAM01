@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshCity Cleaning</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #0077b6;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #023e8a;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #0077b6;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .services {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .service {
+            flex: 1;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+            background: #f9f9f9;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .service img {
+            max-width: 100%;
+            height: auto;
+        }
+        footer {
+            background-color: #023e8a;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to FreshCity Cleaning</h1>
+        <p>Your trusted partner for Residential, Commercial, and Industrial cleaning services.</p>
+    </header>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">About Us</a>
+        <a href="/contact">Contact</a>
+    </nav>
+    <section>
+        <h2>Our Services</h2>
+        <div class="services">
+            <div class="service">
+                <img src="./images/residential_cleaning.jpg" alt="Residential Cleaning">
+                <h3>Residential Cleaning</h3>
+                <p>Keep your home spotless and inviting with our professional residential cleaning services.</p>
+            </div>
+            <div class="service">
+                <img src="./images/commercial_cleaning.jpg" alt="Commercial Cleaning">
+                <h3>Commercial Cleaning</h3>
+                <p>Ensure your office or retail space remains pristine and productive.</p>
+            </div>
+            <div class="service">
+                <img src="./images/industrial_cleaning.jpg" alt="Industrial Cleaning">
+                <h3>Industrial Cleaning</h3>
+                <p>Specialized cleaning solutions for warehouses, factories, and industrial sites.</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>FreshCity Cleaning &copy; 2024</p>
+    </footer>
+</body>
+</html>
