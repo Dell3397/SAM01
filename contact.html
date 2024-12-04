@@ -15,21 +15,31 @@
         header {
             background-color: #023e8a;
             color: white;
-            padding: 30px;
+            padding: 20px;
             text-align: center;
+        }
+        nav {
+            background-color: #0077b6;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #023e8a;
         }
         section {
             padding: 20px;
             margin: 20px auto;
-            max-width: 600px;
+            max-width: 800px;
             background: white;
-            border: 2px solid #023e8a;
             border-radius: 10px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-        h2 {
-            color: #023e8a;
-            text-align: center;
         }
         footer {
             background-color: #023e8a;
@@ -38,13 +48,6 @@
             padding: 10px;
             margin-top: 20px;
         }
-        .contact-info {
-            text-align: center;
-            margin: 10px 0;
-        }
-        .contact-info strong {
-            color: #0077b6;
-        }
     </style>
 </head>
 <body>
@@ -52,17 +55,16 @@
         <h1>Contact FreshCity Cleaning</h1>
         <p>We’re Here to Help!</p>
     </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+    </nav>
     <section>
         <h2>Reach Us</h2>
-        <div class="contact-info">
-            <p><strong>Phone:</strong> 0481 340 006</p>
-            <p><strong>Email:</strong> info@freshcity.com.au</p>
-            <p><strong>Address:</strong> 123 Cleaning Lane, Sydney, NSW</p>
-        </div>
-        <h2>Follow Us</h2>
-        <p class="contact-info">
-            Stay updated by connecting with us on our social media channels.
-        </p>
+        <p><strong>Phone:</strong> +61 123 456 789</p>
+        <p><strong>Email:</strong> info@freshcity.com.au</p>
+        <p><strong>Address:</strong> 123 Cleaning Lane, Sydney, NSW</p>
     </section>
     <footer>
         <p>&copy; 2024 FreshCity Cleaning - All Rights Reserved</p>
