@@ -15,20 +15,27 @@
         header {
             background-color: #4caf50;
             color: white;
-            padding: 20px;
+            padding: 40px 20px;
             text-align: center;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
         }
         nav {
             background-color: #388e3c;
             overflow: hidden;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
         }
         nav a {
-            float: left;
             display: block;
             color: white;
             text-align: center;
             padding: 14px 20px;
             text-decoration: none;
+            flex: 1;
         }
         nav a:hover {
             background-color: #4caf50;
@@ -36,7 +43,7 @@
         section {
             padding: 20px;
             margin: 20px auto;
-            max-width: 900px;
+            max-width: 1200px;
             background: white;
             border-radius: 10px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -61,6 +68,15 @@
             margin-bottom: 10px;
             border-radius: 10px;
         }
+        .intro {
+            text-align: center;
+            padding: 20px;
+        }
+        .intro p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin: 20px 0;
+        }
         footer {
             background-color: #388e3c;
             color: white;
@@ -68,12 +84,26 @@
             padding: 10px;
             margin-top: 20px;
         }
+        @media screen and (max-width: 768px) {
+            .services {
+                flex-direction: column;
+                align-items: center;
+            }
+            .service {
+                flex: none;
+                width: 100%;
+            }
+            nav a {
+                flex: none;
+                width: 100%;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>Welcome to Disability Support Services</h1>
-        <p>Providing essential services for individuals with disabilities.</p>
+        <p>Providing essential support for a better life.</p>
     </header>
     <nav>
         <a href="index.html">Home</a>
@@ -82,27 +112,35 @@
         <a href="contact.html">Contact</a>
     </nav>
     <section>
-        <h2>Our Services</h2>
+        <div class="intro">
+            <h2>Our Mission</h2>
+            <p>
+                At Disability Support Services, we aim to empower individuals with disabilities by providing
+                high-quality, reliable, and compassionate services. From cleaning and transportation to shopping
+                assistance, our goal is to make your life easier and more fulfilling.
+            </p>
+        </div>
+        <h2 style="text-align: center;">Our Services</h2>
         <div class="services">
             <div class="service">
                 <img src="cleaning_service.jpg" alt="Cleaning Services">
                 <h3><a href="cleaning.html">Cleaning Services</a></h3>
-                <p>Professional cleaning for a comfortable living environment.</p>
+                <p>Professional cleaning to ensure a safe and comfortable living space.</p>
             </div>
             <div class="service">
                 <img src="transportation_service.jpg" alt="Transportation Services">
                 <h3><a href="transportation.html">Transportation Services</a></h3>
-                <p>Reliable transportation for your needs.</p>
+                <p>Accessible and reliable transportation for all your needs.</p>
             </div>
             <div class="service">
                 <img src="shopping_service.jpg" alt="Shopping Assistance">
                 <h3><a href="shopping.html">Shopping Assistance</a></h3>
-                <p>Helping you get the essentials delivered to your doorstep.</p>
+                <p>Helping you get the essentials delivered right to your door.</p>
             </div>
         </div>
     </section>
     <footer>
-        <p>Disability Support Services &copy; 2024</p>
+        <p>&copy; 2024 Disability Support Services</p>
     </footer>
 </body>
 </html>
