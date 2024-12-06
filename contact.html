@@ -3,23 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - FreshCity Cleaning</title>
+    <title>Contact Us - Disability Support Services</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
+            background-color: #f4f4f4;
             color: #333;
         }
         header {
-            background-color: #023e8a;
+            background-color: #4caf50;
             color: white;
             padding: 20px;
             text-align: center;
         }
         nav {
-            background-color: #0077b6;
+            background-color: #388e3c;
             overflow: hidden;
         }
         nav a {
@@ -31,18 +31,46 @@
             text-decoration: none;
         }
         nav a:hover {
-            background-color: #023e8a;
+            background-color: #4caf50;
         }
         section {
             padding: 20px;
             margin: 20px auto;
-            max-width: 800px;
+            max-width: 900px;
             background: white;
             border-radius: 10px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        form label {
+            margin: 10px 0 5px;
+        }
+        form input, form textarea {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+        }
+        form button {
+            padding: 10px 20px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #388e3c;
+        }
+        .contact-info {
+            margin-top: 20px;
+        }
         footer {
-            background-color: #023e8a;
+            background-color: #388e3c;
             color: white;
             text-align: center;
             padding: 10px;
@@ -52,22 +80,38 @@
 </head>
 <body>
     <header>
-        <h1>Contact FreshCity Cleaning</h1>
-        <p>We’re Here to Help!</p>
+        <h1>Contact Us</h1>
+        <p>We’d love to hear from you! Reach out to us with any questions or requests.</p>
     </header>
     <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About Us</a>
-        <a href="contact.html">Contact</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html" class="active">Contact</a>
     </nav>
     <section>
-        <h2>Reach Us</h2>
-        <p><strong>Phone:</strong> +61 123 456 789</p>
-        <p><strong>Email:</strong> info@freshcity.com.au</p>
-        <p><strong>Address:</strong> 123 Cleaning Lane, Sydney, NSW</p>
+        <h2>Get in Touch</h2>
+        <form action="submit_form.php" method="POST">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+            
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+        <div class="contact-info">
+            <h3>Our Contact Details</h3>
+            <p><strong>Phone:</strong> +61 123 456 789</p>
+            <p><strong>Email:</strong> info@disabilitysupportservices.com</p>
+            <p><strong>Address:</strong> 123 Support Lane, Sydney, NSW</p>
+        </div>
     </section>
     <footer>
-        <p>&copy; 2024 FreshCity Cleaning - All Rights Reserved</p>
+        <p>&copy; 2024 Disability Support Services</p>
     </footer>
 </body>
 </html>
