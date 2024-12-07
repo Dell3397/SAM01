@@ -24,7 +24,7 @@
             position: absolute;
             top: 10px;
             left: 20px;
-            height: 100px; /* Enlarged logo */
+            height: 100px;
         }
         header h1 {
             font-size: 2.5em;
@@ -43,7 +43,6 @@
             text-align: center;
             padding: 14px 20px;
             text-decoration: none;
-            flex: 1;
         }
         nav a:hover {
             background-color: #4caf50;
@@ -56,50 +55,11 @@
             border-radius: 10px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
-        .intro {
-            text-align: center;
-            padding: 20px;
-        }
-        .intro p {
-            font-size: 1.2em;
-            line-height: 1.6;
-            text-align: justify;
-        }
-        .services {
-            text-align: center;
-        }
-        .service-list {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            margin-top: 20px;
-        }
-        .service {
-            flex: 1;
-            margin: 10px;
-            padding: 10px;
-            text-align: center;
-            background: #e8f5e9;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        .service img {
+        section img {
             max-width: 100%;
             height: auto;
-            margin-bottom: 10px;
             border-radius: 10px;
-        }
-        .cta {
-            text-align: center;
-            padding: 20px;
-            background-color: #4caf50;
-            color: white;
-            border-radius: 10px;
-        }
-        .cta a {
-            color: white;
-            font-weight: bold;
-            text-decoration: none;
+            margin-bottom: 15px;
         }
         footer {
             background-color: #388e3c;
@@ -111,20 +71,6 @@
         footer a {
             color: white;
             text-decoration: underline;
-        }
-        @media screen and (max-width: 768px) {
-            .service-list {
-                flex-direction: column;
-                align-items: center;
-            }
-            .service {
-                flex: none;
-                width: 100%;
-            }
-            nav a {
-                flex: none;
-                width: 100%;
-            }
         }
     </style>
 </head>
@@ -141,38 +87,32 @@
         <a href="contact.html">Contact</a>
         <a href="book-now.html">Book Now</a>
     </nav>
-    <section class="intro">
-        <h2>Our Mission</h2>
+    <section>
+        <h2>Welcome to Vital Vista</h2>
         <p>
-            At Vital Vista, we are dedicated to empowering individuals by offering services that promote independence, dignity, 
-            and a higher quality of life. From professional cleaning and transportation to shopping and gardening assistance, we aim to make 
-            every step of your journey smoother and more fulfilling.
+            At Vital Vista, we are passionate about improving the lives of elderly and disabled individuals. We believe in empowering our clients with the services and support they need to lead dignified and fulfilling lives.
         </p>
+        <p>
+            As a proud provider under the NDIS (National Disability Insurance Scheme), we are committed to delivering high-quality care and tailored support services that align with your unique needs and goals.
+        </p>
+        <img src="elderly_woman_smiling.jpg" alt="An elderly woman standing on the door looking outside and smiling">
     </section>
-    <section class="services">
+    <section>
+        <h2>Our Passion</h2>
+        <p>
+            Helping people live easier and more enjoyable lives is at the heart of what we do. Whether it's through compassionate care, personalized assistance, or meaningful companionship, we strive to bring a smile to the faces of those we serve.
+        </p>
+        <img src="elderly_man_tea.jpg" alt="An elderly man sitting on the sofa having tea and reading a newspaper">
+    </section>
+    <section>
         <h2>Our Services</h2>
-        <div class="service-list">
-            <div class="service">
-                <img src="cleaning_service.jpg" alt="Cleaning Services">
-                <h3><a href="cleaning.html">Cleaning Services</a></h3>
-                <p>Professional cleaning to ensure a safe and comfortable living space.</p>
-            </div>
-            <div class="service">
-                <img src="transportation_service.jpg" alt="Transportation Services">
-                <h3><a href="transportation.html">Transportation Services</a></h3>
-                <p>Accessible transportation for your everyday needs.</p>
-            </div>
-            <div class="service">
-                <img src="shopping_service.jpg" alt="Shopping Assistance">
-                <h3><a href="shopping.html">Shopping Assistance</a></h3>
-                <p>Helping you get the essentials delivered right to your door.</p>
-            </div>
-            <div class="service">
-                <img src="gardening_service_final.jpg" alt="Gardening Services">
-                <h3><a href="gardening.html">Gardening Services</a></h3>
-                <p>Professional gardening to maintain a beautiful and healthy outdoor space.</p>
-            </div>
-        </div>
+        <p>
+            We offer a wide range of services to support elderly and disabled individuals in their daily lives. From professional cleaning and gardening to transportation and shopping assistance, we aim to make everyday tasks easier and more manageable. 
+        </p>
+        <p>
+            Our purpose is to ensure that every individual can access the support they need to live independently and comfortably. With a caring team and a tailored approach, we help our clients achieve their goals while enhancing their quality of life.
+        </p>
+        <img src="support_shopping.jpg" alt="A young man assisting an elderly woman in a supermarket">
     </section>
     <footer>
         <p>&copy; 2024 Vital Vista | Email: <a href="mailto:info@vitalvista.com.au">info@vitalvista.com.au</a></p>
