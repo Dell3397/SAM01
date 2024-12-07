@@ -48,6 +48,8 @@
             background-color: #4caf50;
         }
         section {
+            display: flex;
+            align-items: center;
             padding: 20px;
             margin: 20px auto;
             max-width: 1200px;
@@ -56,10 +58,17 @@
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
         section img {
-            max-width: 100%;
+            width: 40%;
             height: auto;
             border-radius: 10px;
-            margin-bottom: 15px;
+            margin-right: 20px;
+        }
+        section:nth-child(even) img {
+            margin-right: 0;
+            margin-left: 20px;
+        }
+        section:nth-child(even) {
+            flex-direction: row-reverse;
         }
         footer {
             background-color: #388e3c;
@@ -88,31 +97,37 @@
         <a href="book-now.html">Book Now</a>
     </nav>
     <section>
-        <h2>Welcome to Vital Vista</h2>
-        <p>
-            At Vital Vista, we are passionate about improving the lives of elderly and disabled individuals. We believe in empowering our clients with the services and support they need to lead dignified and fulfilling lives.
-        </p>
-        <p>
-            As a proud provider under the NDIS (National Disability Insurance Scheme), we are committed to delivering high-quality care and tailored support services that align with your unique needs and goals.
-        </p>
-        <img src="elderly_woman_smiling.jpg" alt="An elderly woman standing on the door looking outside and smiling">
+        <img src="elderly_woman_smiling.jpg" alt="An elderly woman smiling and standing at her door">
+        <div>
+            <h2>Welcome to Vital Vista</h2>
+            <p>
+                At Vital Vista, we are passionate about improving the lives of elderly and disabled individuals. We believe in empowering our clients with the services and support they need to lead dignified and fulfilling lives.
+            </p>
+            <p>
+                As a proud provider under the NDIS (National Disability Insurance Scheme), we are committed to delivering high-quality care and tailored support services that align with your unique needs and goals.
+            </p>
+        </div>
     </section>
     <section>
-        <h2>Our Passion</h2>
-        <p>
-            Helping people live easier and more enjoyable lives is at the heart of what we do. Whether it's through compassionate care, personalized assistance, or meaningful companionship, we strive to bring a smile to the faces of those we serve.
-        </p>
-        <img src="elderly_man_tea.jpg" alt="An elderly man sitting on the sofa having tea and reading a newspaper">
+        <img src="elderly_man_tea.jpg" alt="An elderly man enjoying tea while reading a newspaper">
+        <div>
+            <h2>Our Passion</h2>
+            <p>
+                Helping people live easier and more enjoyable lives is at the heart of what we do. Whether it's through compassionate care, personalized assistance, or meaningful companionship, we strive to bring a smile to the faces of those we serve.
+            </p>
+        </div>
     </section>
     <section>
-        <h2>Our Services</h2>
-        <p>
-            We offer a wide range of services to support elderly and disabled individuals in their daily lives. From professional cleaning and gardening to transportation and shopping assistance, we aim to make everyday tasks easier and more manageable. 
-        </p>
-        <p>
-            Our purpose is to ensure that every individual can access the support they need to live independently and comfortably. With a caring team and a tailored approach, we help our clients achieve their goals while enhancing their quality of life.
-        </p>
-        <img src="support_shopping.jpg" alt="A young man assisting an elderly woman in a supermarket">
+        <img src="support_shopping.jpg" alt="A young man assisting an elderly woman shopping in a supermarket">
+        <div>
+            <h2>Our Services</h2>
+            <p>
+                We offer a wide range of services to support elderly and disabled individuals in their daily lives. From professional cleaning and gardening to transportation and shopping assistance, we aim to make everyday tasks easier and more manageable. 
+            </p>
+            <p>
+                Our purpose is to ensure that every individual can access the support they need to live independently and comfortably. With a caring team and a tailored approach, we help our clients achieve their goals while enhancing their quality of life.
+            </p>
+        </div>
     </section>
     <footer>
         <p>&copy; 2024 Vital Vista | Email: <a href="mailto:info@vitalvista.com.au">info@vitalvista.com.au</a></p>
