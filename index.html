@@ -3,13 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Vital Vista offers professional cleaning, transportation, shopping assistance, and gardening services to support your everyday needs.">
-    <meta name="keywords" content="cleaning services, transportation, gardening, shopping assistance, professional support">
-    <meta name="author" content="Vital Vista">
-    <meta property="og:title" content="Vital Vista | Professional Support Services">
-    <meta property="og:description" content="Providing quality cleaning, transportation, shopping, and gardening services for your everyday needs.">
-    <meta property="og:image" content="Vital_Vista_Logo.png">
-    <meta property="og:url" content="https://yourwebsite.com/">
     <title>Vital Vista - Empowering Your Path</title>
     <style>
         body {
@@ -31,25 +24,11 @@
             position: absolute;
             top: 10px;
             left: 20px;
-            height: 100px;
+            height: 100px; /* Enlarged logo */
         }
         header h1 {
             font-size: 2.5em;
             margin: 0;
-        }
-        .book-now-button {
-            margin-top: 10px;
-            display: inline-block;
-            background-color: #4caf50;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 16px;
-            font-weight: bold;
-        }
-        .book-now-button:hover {
-            background-color: #388e3c;
         }
         nav {
             background-color: #388e3c;
@@ -62,9 +41,9 @@
             display: block;
             color: white;
             text-align: center;
-            padding: 10px 16px;
+            padding: 14px 20px;
             text-decoration: none;
-            margin: 0 5px;
+            flex: 1;
         }
         nav a:hover {
             background-color: #4caf50;
@@ -86,6 +65,42 @@
             line-height: 1.6;
             text-align: justify;
         }
+        .services {
+            text-align: center;
+        }
+        .service-list {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .service {
+            flex: 1;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+            background: #e8f5e9;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .service img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+            border-radius: 10px;
+        }
+        .cta {
+            text-align: center;
+            padding: 20px;
+            background-color: #4caf50;
+            color: white;
+            border-radius: 10px;
+        }
+        .cta a {
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+        }
         footer {
             background-color: #388e3c;
             color: white;
@@ -97,6 +112,20 @@
             color: white;
             text-decoration: underline;
         }
+        @media screen and (max-width: 768px) {
+            .service-list {
+                flex-direction: column;
+                align-items: center;
+            }
+            .service {
+                flex: none;
+                width: 100%;
+            }
+            nav a {
+                flex: none;
+                width: 100%;
+            }
+        }
     </style>
 </head>
 <body>
@@ -104,13 +133,11 @@
         <img src="Vital_Vista_Logo.png" alt="Vital Vista Logo">
         <h1>Welcome to Vital Vista</h1>
         <p>Empowering Your Path to a Brighter Future</p>
-        <a href="book-now.html" class="book-now-button">Book Now</a>
     </header>
     <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About Us</a>
         <a href="services.html">Services</a>
-        <a href="gardening.html">Gardening Services</a>
         <a href="contact.html">Contact</a>
     </nav>
     <section class="intro">
@@ -120,6 +147,31 @@
             and a higher quality of life. From professional cleaning and transportation to shopping and gardening assistance, we aim to make 
             every step of your journey smoother and more fulfilling.
         </p>
+    </section>
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="service-list">
+            <div class="service">
+                <img src="cleaning_service.jpg" alt="Cleaning Services">
+                <h3><a href="cleaning.html">Cleaning Services</a></h3>
+                <p>Professional cleaning to ensure a safe and comfortable living space.</p>
+            </div>
+            <div class="service">
+                <img src="transportation_service.jpg" alt="Transportation Services">
+                <h3><a href="transportation.html">Transportation Services</a></h3>
+                <p>Accessible transportation for your everyday needs.</p>
+            </div>
+            <div class="service">
+                <img src="shopping_service.jpg" alt="Shopping Assistance">
+                <h3><a href="shopping.html">Shopping Assistance</a></h3>
+                <p>Helping you get the essentials delivered right to your door.</p>
+            </div>
+            <div class="service">
+                <img src="gardening_service_final.jpg" alt="Gardening Services">
+                <h3><a href="gardening.html">Gardening Services</a></h3>
+                <p>Professional gardening to maintain a beautiful and healthy outdoor space.</p>
+            </div>
+        </div>
     </section>
     <footer>
         <p>&copy; 2024 Vital Vista | Email: <a href="mailto:info@vitalvista.com.au">info@vitalvista.com.au</a></p>
