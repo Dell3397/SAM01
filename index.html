@@ -15,8 +15,15 @@
         header {
             background-color: #4caf50;
             color: white;
-            padding: 40px 20px;
+            padding: 20px;
             text-align: center;
+            position: relative;
+        }
+        header img {
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            height: 60px;
         }
         header h1 {
             font-size: 2.5em;
@@ -100,6 +107,10 @@
             padding: 10px;
             margin-top: 20px;
         }
+        footer a {
+            color: white;
+            text-decoration: underline;
+        }
         @media screen and (max-width: 768px) {
             .service-list {
                 flex-direction: column;
@@ -118,6 +129,7 @@
 </head>
 <body>
     <header>
+        <img src="Vital_Vista_Logo.png" alt="Vital Vista Logo">
         <h1>Welcome to Vital Vista</h1>
         <p>Empowering Your Path to a Brighter Future</p>
     </header>
@@ -161,7 +173,7 @@
         </div>
     </section>
     <footer>
-        <p>&copy; 2024 Vital Vista | Email: <a href="mailto:info@vitalvista.com.au" style="color: white;">info@vitalvista.com.au</a></p>
+        <p>&copy; 2024 Vital Vista | Email: <a href="mailto:info@vitalvista.com.au">info@vitalvista.com.au</a></p>
     </footer>
 </body>
 </html>
