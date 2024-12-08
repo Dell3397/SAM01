@@ -3,53 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Disability Support Services</title>
+    <title>About Us - Vital Vista</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f7f7f7;
             color: #333;
         }
         header {
-            background-color: #4caf50;
-            color: white;
+            background-color: #ffffff;
+            color: #333;
             padding: 20px;
             text-align: center;
+            border-bottom: 2px solid #4caf50;
         }
-        nav {
-            background-color: #388e3c;
-            overflow: hidden;
-        }
-        nav a {
-            float: left;
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 20px;
-            text-decoration: none;
-        }
-        nav a:hover {
-            background-color: #4caf50;
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
         }
         section {
             padding: 20px;
             margin: 20px auto;
-            max-width: 900px;
+            max-width: 1200px;
             background: white;
             border-radius: 10px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
-        .images {
+        .content-section {
             display: flex;
+            align-items: center;
             justify-content: space-between;
-            margin: 20px 0;
+            margin-bottom: 20px;
         }
-        .images img {
-            width: 48%;
+        .content-section img {
+            max-width: 45%;
+            height: auto;
             border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .content-section:nth-child(odd) {
+            flex-direction: row-reverse;
+        }
+        .text-content {
+            max-width: 50%;
+            padding: 0 20px;
         }
         footer {
             background-color: #388e3c;
@@ -63,39 +62,55 @@
 <body>
     <header>
         <h1>About Us</h1>
-        <p>Our mission is to empower and support individuals with disabilities.</p>
     </header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html" class="active">About Us</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a>
-    </nav>
     <section>
-        <h2>Who We Are</h2>
-        <p>
-            Disability Support Services was founded with the goal of providing essential support to individuals with disabilities. 
-            We understand the unique challenges faced by our clients and are dedicated to offering reliable and personalized services 
-            to make their lives easier and more fulfilling.
-        </p>
-        <h2>Our Mission</h2>
-        <p>
-            Our mission is to create a supportive and inclusive environment where individuals with disabilities can thrive. 
-            Through our services, we aim to empower our clients to lead independent and dignified lives.
-        </p>
-        <div class="images">
-            <img src="cleaning_service.jpg" alt="Cleaning Services">
-            <img src="transportation_service.jpg" alt="Transportation Services">
+        <div class="content-section">
+            <img src="elderly_woman_with_nurse.jpg" alt="Elderly Woman with Nurse">
+            <div class="text-content">
+                <h2>Our Vision</h2>
+                <p>
+                    At Vital Vista, we believe that life should be lived with dignity, independence, and joy at every stage. 
+                    Our journey began with a vision to create a supportive environment for individuals who require assistance 
+                    in their daily lives. While we are not NDIS-registered providers, we specialize in helping people navigate 
+                    and maximize their NDIS-approved programs to achieve the lifestyle they deserve.
+                </p>
+            </div>
         </div>
-        <h2>Why Choose Us?</h2>
-        <p>
-            With a dedicated team and a wide range of services, we prioritize the well-being of our clients. 
-            Whether it's maintaining a clean and comfortable home, providing reliable transportation, or assisting with shopping needs, 
-            we are here to help every step of the way.
-        </p>
+        <div class="content-section">
+            <img src="elderly_women_having_tea.jpg" alt="Elderly Women Having Tea">
+            <div class="text-content">
+                <h2>Our Commitment</h2>
+                <p>
+                    Our team is composed of compassionate, experienced professionals dedicated to meeting your unique needs. 
+                    Whether it’s offering personalized home cleaning services, transportation for appointments, or shopping 
+                    assistance, our goal is to empower you and simplify your day-to-day routines. 
+                </p>
+            </div>
+        </div>
+        <div class="content-section">
+            <img src="wheelchair_assistance.jpg" alt="Wheelchair Assistance">
+            <div class="text-content">
+                <h2>Our Services</h2>
+                <p>
+                    From meticulously planned cleaning schedules to gardening services that enhance the beauty of your surroundings, 
+                    our comprehensive offerings are designed to enhance your quality of life. We go the extra mile to ensure that 
+                    every service is tailored to your preferences and comfort.
+                </p>
+            </div>
+        </div>
+        <div class="content-section">
+            <img src="gardening_worker.jpg" alt="Gardening Worker">
+            <div class="text-content">
+                <h2>Your Partner in Life</h2>
+                <p>
+                    Let us be your partner in creating a brighter, more independent future. Together, we can turn everyday challenges 
+                    into opportunities for growth, connection, and happiness.
+                </p>
+            </div>
+        </div>
     </section>
     <footer>
-        <p>&copy; 2024 Disability Support Services</p>
+        <p>&copy; 2024 Vital Vista | Email: <a href="mailto:info@vitalvista.com.au" style="color: white;">info@vitalvista.com.au</a></p>
     </footer>
 </body>
 </html>
