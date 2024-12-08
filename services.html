@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Services - Vital Vista</title>
+    <title>Services - Vital Vista</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -13,22 +13,27 @@
             color: #333;
         }
         header {
-            background-color: #4caf50;
-            color: white;
+            background-color: #ffffff;
+            color: #333;
             padding: 20px;
             text-align: center;
+            border-bottom: 2px solid #4caf50;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
         }
         nav {
             background-color: #388e3c;
-            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
         }
         nav a {
-            float: left;
-            display: block;
             color: white;
-            text-align: center;
             padding: 14px 20px;
             text-decoration: none;
+            text-align: center;
         }
         nav a:hover {
             background-color: #4caf50;
@@ -41,25 +46,24 @@
             border-radius: 10px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
-        .services-list {
+        .content-section {
             display: flex;
+            align-items: flex-start;
             justify-content: space-between;
-            flex-wrap: wrap;
+            margin-bottom: 20px;
         }
-        .service {
-            flex: 1;
-            margin: 10px;
-            padding: 20px;
-            text-align: center;
-            background: #e8f5e9;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        .service img {
-            max-width: 100%;
+        .content-section img {
+            max-width: 45%;
             height: auto;
-            margin-bottom: 10px;
             border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .content-section:nth-child(odd) {
+            flex-direction: row-reverse;
+        }
+        .text-content {
+            max-width: 50%;
+            padding: 0 20px;
         }
         footer {
             background-color: #388e3c;
@@ -68,64 +72,68 @@
             padding: 10px;
             margin-top: 20px;
         }
-        footer a {
-            color: white;
-            text-decoration: underline;
-        }
-        @media screen and (max-width: 768px) {
-            .services-list {
-                flex-direction: column;
-                align-items: center;
-            }
-            .service {
-                flex: none;
-                width: 100%;
-            }
-            nav a {
-                flex: none;
-                width: 100%;
-            }
-        }
     </style>
 </head>
 <body>
     <header>
         <h1>Our Services</h1>
-        <p>Comprehensive solutions to meet your everyday needs</p>
     </header>
     <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About Us</a>
         <a href="services.html">Services</a>
         <a href="contact.html">Contact</a>
+        <a href="book-now.html">Book Now</a>
     </nav>
     <section>
-        <h2>What We Offer</h2>
-        <div class="services-list">
-            <div class="service">
-                <img src="Cleaning_Service_Image_New.png" alt="Cleaning Services">
-                <h3><a href="cleaning.html">Cleaning Services</a></h3>
-                <p>Professional cleaning to ensure a safe and comfortable living space.</p>
+        <div class="content-section">
+            <img src="cat_on_grass.jpg" alt="Cat on Grass">
+            <div class="text-content">
+                <h2>Pet-Friendly Gardening</h2>
+                <p>
+                    Our gardening services are designed with every member of your family in mind, including your furry companions. From lawn care to creating vibrant gardens, our team ensures a safe, pet-friendly outdoor space. Your garden will not only look great but also be a haven for you and your pets to enjoy.  
+                </p>
             </div>
-            <div class="service">
-                <img src="Transportation_Service_Image_New.png" alt="Transportation Services">
-                <h3><a href="transportation.html">Transportation Services</a></h3>
-                <p>Accessible transportation for your everyday needs.</p>
+        </div>
+        <div class="content-section">
+            <img src="sofa_cleaning_service.jpg" alt="Sofa Cleaning Service">
+            <div class="text-content">
+                <h2>Professional Cleaning Services</h2>
+                <p>
+                    Keeping your home clean has never been easier. Our experienced cleaning professionals provide top-notch services tailored to your needs. Whether it’s deep cleaning your living room or ensuring your space remains fresh and hygienic, we've got you covered.
+                </p>
             </div>
-            <div class="service">
-                <img src="Shopping_Service_Image_New.png" alt="Shopping Assistance">
-                <h3><a href="shopping.html">Shopping Assistance</a></h3>
-                <p>Helping you get the essentials delivered right to your door.</p>
+        </div>
+        <div class="content-section">
+            <img src="wheelchair_ramp_assistance.jpg" alt="Wheelchair Ramp Assistance">
+            <div class="text-content">
+                <h2>Transportation Assistance</h2>
+                <p>
+                    With our reliable transportation services, reaching your appointments or running errands is stress-free. We offer wheelchair-accessible vehicles to ensure comfort and safety during every ride, giving you the mobility and freedom you deserve.
+                </p>
             </div>
-            <div class="service">
-                <img src="Gardening_Service_Image_New.png" alt="Gardening Services">
-                <h3><a href="gardening.html">Gardening Services</a></h3>
-                <p>Professional gardening to maintain a beautiful and healthy outdoor space.</p>
+        </div>
+        <div class="content-section">
+            <img src="elderly_woman_shopping.jpg" alt="Elderly Woman Shopping">
+            <div class="text-content">
+                <h2>Shopping Assistance</h2>
+                <p>
+                    Grocery shopping is no longer a hassle with our dedicated team ready to assist you. We accompany you to the store, help pick items, and carry your bags so you can focus on enjoying the experience.
+                </p>
+            </div>
+        </div>
+        <div class="content-section">
+            <img src="woman_cleaning_surface.jpg" alt="Woman Cleaning Surface">
+            <div class="text-content">
+                <h2>Comprehensive Cleaning Solutions</h2>
+                <p>
+                    From dusting and vacuuming to sanitizing surfaces, our cleaning experts ensure your home or workspace is spotless. We customize our services to your preferences, providing a clean and organized environment that enhances your well-being.
+                </p>
             </div>
         </div>
     </section>
     <footer>
-        <p>&copy; 2024 Vital Vista | Email: <a href="mailto:info@vitalvista.com.au">info@vitalvista.com.au</a></p>
+        <p>&copy; 2024 Vital Vista | Email: <a href="mailto:info@vitalvista.com.au" style="color: white;">info@vitalvista.com.au</a></p>
     </footer>
 </body>
 </html>
