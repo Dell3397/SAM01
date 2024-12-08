@@ -13,15 +13,14 @@
             color: #333;
         }
         header {
-            background-color: #ffffff;
-            color: #333;
+            background-color: #388e3c;
+            color: white;
             padding: 20px;
             text-align: center;
-            border-bottom: 2px solid #4caf50;
         }
         header h1 {
-            font-size: 2.5em;
             margin: 0;
+            font-size: 2.5em;
         }
         section {
             padding: 20px;
@@ -30,25 +29,29 @@
             background: white;
             border-radius: 10px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-        .content-section {
             display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 20px;
+            gap: 20px;
         }
-        .content-section img {
-            max-width: 45%;
+        .content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; /* Aligns content to the top */
+        }
+        .content h2 {
+            color: #388e3c;
+            margin-bottom: 10px;
+        }
+        .image {
+            flex: 1;
+            max-width: 50%;
+            display: flex;
+            align-items: flex-start; /* Aligns the image to the top */
+        }
+        .image img {
+            max-width: 100%;
             height: auto;
             border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-        .content-section:nth-child(odd) {
-            flex-direction: row-reverse;
-        }
-        .text-content {
-            max-width: 50%;
-            padding: 0 20px;
         }
         footer {
             background-color: #388e3c;
@@ -64,49 +67,30 @@
         <h1>About Us</h1>
     </header>
     <section>
-        <div class="content-section">
-            <img src="elderly_woman_with_nurse.jpg" alt="Elderly Woman with Nurse">
-            <div class="text-content">
-                <h2>Our Vision</h2>
-                <p>
-                    At Vital Vista, we believe that life should be lived with dignity, independence, and joy at every stage. 
-                    Our journey began with a vision to create a supportive environment for individuals who require assistance 
-                    in their daily lives. While we are not NDIS-registered providers, we specialize in helping people navigate 
-                    and maximize their NDIS-approved programs to achieve the lifestyle they deserve.
-                </p>
-            </div>
+        <div class="content">
+            <h2>Who We Are</h2>
+            <p>At Vital Vista, we believe in enriching lives through compassionate, personalized, and reliable services. We provide assistance for individuals with approved NDIS programs, empowering them to live independently. Our experienced team prioritizes respect, dignity, and understanding, ensuring every service is tailored to meet the unique needs of our clients.</p>
         </div>
-        <div class="content-section">
-            <img src="elderly_women_having_tea.jpg" alt="Elderly Women Having Tea">
-            <div class="text-content">
-                <h2>Our Commitment</h2>
-                <p>
-                    Our team is composed of compassionate, experienced professionals dedicated to meeting your unique needs. 
-                    Whether it’s offering personalized home cleaning services, transportation for appointments, or shopping 
-                    assistance, our goal is to empower you and simplify your day-to-day routines. 
-                </p>
-            </div>
+        <div class="image">
+            <img src="elderly_woman_in_garden.jpg" alt="Elderly Woman in Garden">
         </div>
-        <div class="content-section">
+    </section>
+    <section>
+        <div class="image">
             <img src="wheelchair_assistance.jpg" alt="Wheelchair Assistance">
-            <div class="text-content">
-                <h2>Our Services</h2>
-                <p>
-                    From meticulously planned cleaning schedules to gardening services that enhance the beauty of your surroundings, 
-                    our comprehensive offerings are designed to enhance your quality of life. We go the extra mile to ensure that 
-                    every service is tailored to your preferences and comfort.
-                </p>
-            </div>
         </div>
-        <div class="content-section">
-            <img src="gardening_worker.jpg" alt="Gardening Worker">
-            <div class="text-content">
-                <h2>Your Partner in Life</h2>
-                <p>
-                    Let us be your partner in creating a brighter, more independent future. Together, we can turn everyday challenges 
-                    into opportunities for growth, connection, and happiness.
-                </p>
-            </div>
+        <div class="content">
+            <h2>What We Do</h2>
+            <p>From helping with day-to-day activities to providing support during life’s transitions, Vital Vista is here to make a positive difference. Our services include cleaning, transportation, shopping assistance, and gardening. We ensure that our clients receive care and assistance that enhances their quality of life and promotes their well-being.</p>
+        </div>
+    </section>
+    <section>
+        <div class="content">
+            <h2>Why Choose Us</h2>
+            <p>We understand the challenges faced by individuals needing support. Our team is trained, friendly, and motivated to provide exceptional service with compassion and professionalism. Vital Vista goes beyond the ordinary, aiming to build long-lasting relationships with clients based on trust, respect, and a shared commitment to achieving personal goals.</p>
+        </div>
+        <div class="image">
+            <img src="elderly_woman_having_tea.jpg" alt="Elderly Woman Having Tea">
         </div>
     </section>
     <footer>
